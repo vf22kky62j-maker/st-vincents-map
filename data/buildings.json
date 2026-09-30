@@ -1,0 +1,66 @@
+[
+  {
+    "id": "acmd",
+    "name": "ACMD",
+    "address": "27 Victoria Parade",
+    "organisation": "ACMD / precinct partners",
+    "lat": -37.807524,
+    "lng": 144.973724
+  },
+  {
+    "id": "brenan-hall",
+    "name": "Brenan Hall",
+    "address": "31 Victoria Parade",
+    "organisation": "ACMD",
+    "lat": -37.807678,
+    "lng": 144.974083
+  },
+  {
+    "id": "building-b",
+    "name": "Building B – Medical Centre",
+    "address": "55 Victoria Parade",
+    "organisation": "St Vincent's Hospital Melbourne",
+    "lat": -37.80769,
+    "lng": 144.975531
+  },
+  {
+    "id": "healy-wing",
+    "name": "Building C – Healy Wing",
+    "address": "41 Victoria Parade",
+    "organisation": "St Vincent's Hospital Melbourne",
+    "lat": -37.80753,
+    "lng": 144.975009
+  },
+  {
+    "id": "daly-wing",
+    "name": "Building D – Daly Wing",
+    "address": "41 Victoria Parade",
+    "organisation": "St Vincent's Hospital Melbourne",
+    "lat": -37.807166,
+    "lng": 144.974353
+  },
+  {
+    "id": "svi-nicholson",
+    "name": "SVI",
+    "address": "20 Nicholson Street",
+    "organisation": "St Vincent's Institute of Medical Research",
+    "lat": -37.807023,
+    "lng": 144.973617
+  },
+  {
+    "id": "svi-princes",
+    "name": "SVI / Research Premises",
+    "address": "9 Princes Street",
+    "organisation": "St Vincent's Institute of Medical Research",
+    "lat": -37.806651,
+    "lng": 144.973917
+  },
+  {
+    "id": "svph",
+    "name": "St Vincent's Private Hospital",
+    "address": "59 Victoria Parade",
+    "organisation": "St Vincent's Private Hospital",
+    "lat": -37.80748,
+    "lng": 144.976071
+  }
+]

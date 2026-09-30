@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brenan Place Precinct — Accommodation Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Brenan Place Precinct — Accommodation Map</h1>
+    <p>Explore accommodation, space types, availability and commercial information across the precinct.</p>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <h2>Filters</h2>
+        <button type="button" id="clear" class="link" hidden>Clear all</button>
+      </div>
+      <div id="filters"></div>
+      <div id="results"></div>
+    </aside>
+
+    <div id="map" role="region" aria-label="Precinct map"></div>
+
+    <aside id="detail" class="detail" aria-label="Property details" hidden></aside>
+  </main>
+
+  <footer class="caveat">
+    <strong>POC data:</strong> This dataset has been prepared for demonstration purposes using publicly available
+    information and assumptions where information was not readily available. All accommodation availability, size,
+    fit-out and commercial terms are subject to confirmation with the relevant owner/operator.
+  </footer>
+
+  <script>
+    if (location.protocol === 'file:') {
+      document.getElementById('map').innerHTML =
+        '<p class="boot-error">This page needs to be served over http — run <code>npm start</code> in this folder, then open http://localhost:8000</p>';
+    }
+  </script>
+</body>
+</html>

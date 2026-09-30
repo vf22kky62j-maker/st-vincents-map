@@ -1,0 +1,11 @@
+{
+  "name": "brenan-place-accommodation-map",
+  "version": "0.1.0",
+  "private": true,
+  "description": "POC: interactive accommodation map for the Brenan Place / St Vincent's precinct",
+  "type": "module",
+  "scripts": {
+    "start": "python3 serve.py",
+    "test": "node --test"
+  }
+}
