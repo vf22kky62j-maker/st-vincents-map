@@ -1,5 +1,5 @@
 // Wires data, filters, map and panels together. All UI is re-rendered from `state`.
-import { loadData } from './data.js';
+import { buildings, spaces } from './data.js';
 import { applyFilters, emptySelection, hasSelection, optionCounts } from './filters.js';
 import { createMap } from './map.js';
 import { renderFilters, renderResults } from './sidebar.js';
@@ -13,7 +13,6 @@ const state = {
   detailId: null, // space shown in the detail panel
 };
 
-const { buildings, spaces } = await loadData();
 const map = createMap($('#map'), buildings, { onSelect: selectBuilding });
 
 function render() {

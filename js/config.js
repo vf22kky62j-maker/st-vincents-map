@@ -1,10 +1,5 @@
 // Everything you'd typically want to tweak lives in this file.
 
-export const DATA_FILES = {
-  buildings: 'data/buildings.json',
-  spaces: 'data/spaces.json',
-};
-
 export const MAP = {
   maxZoom: 19,
   initialMaxZoom: 18, // the map starts fitted to all buildings, no closer than this

@@ -2,13 +2,9 @@
 // Run with: npm test
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
 import { FILTERS, STATUSES } from '../js/config.js';
-import { joinData } from '../js/data.js';
+import { buildings, spaces } from '../js/data.js';
 import { applyFilters, emptySelection } from '../js/filters.js';
-
-const read = file => JSON.parse(readFileSync(new URL(`../data/${file}`, import.meta.url)));
-const { buildings, spaces } = joinData(read('buildings.json'), read('spaces.json'));
 
 const filterBy = (group, ...options) =>
   applyFilters(spaces, { ...emptySelection(), [group]: new Set(options) }).map(s => s.buildingName);

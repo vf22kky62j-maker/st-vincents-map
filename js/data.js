@@ -1,15 +1,5 @@
-import { DATA_FILES } from './config.js';
-
-export async function loadData() {
-  const [buildings, spaces] = await Promise.all(
-    [DATA_FILES.buildings, DATA_FILES.spaces].map(async url => {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error(`Could not load ${url} (${res.status})`);
-      return res.json();
-    }),
-  );
-  return joinData(buildings, spaces);
-}
+import buildingRows from '../data/buildings.json' with { type: 'json' };
+import spaceRows from '../data/spaces.json' with { type: 'json' };
 
 // Buildings and spaces are stored separately (one building → many spaces).
 // Here each space gets a reference to its building, plus the building fields
@@ -39,3 +29,5 @@ export function joinData(buildings, spaces) {
 }
 
 const sqm = n => n.toLocaleString('en-AU');
+
+export const { buildings, spaces } = joinData(buildingRows, spaceRows);

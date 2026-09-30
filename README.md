@@ -21,6 +21,11 @@ because browsers block loading the data files from `file://`.)
 npm test           # checks the three demo journeys + data sanity
 ```
 
+## Hosting (GitHub Pages)
+
+The site is served straight from the `main` branch by GitHub Pages; there's no build step.
+Push to `main` and the live site updates within a minute or two. Note the site is public.
+
 ## Where things live
 
 | File | What it's for |
