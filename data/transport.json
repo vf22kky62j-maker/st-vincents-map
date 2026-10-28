@@ -1,0 +1,183 @@
+[
+  {
+    "id": "bus-st-vincent-s-hospital-victoria-pde",
+    "mode": "bus",
+    "name": "St Vincent's Hospital/Victoria Pde",
+    "routes": [
+      "302",
+      "303",
+      "304",
+      "305",
+      "309",
+      "318",
+      "350",
+      "402",
+      "905",
+      "906",
+      "907",
+      "908"
+    ],
+    "lat": -37.807837,
+    "lng": 144.975021,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "tram-stop-10-nicholson-st-victoria-pde",
+    "mode": "tram",
+    "name": "Stop 10 – Nicholson St/Victoria Pde",
+    "routes": [
+      "30",
+      "35"
+    ],
+    "lat": -37.807941,
+    "lng": 144.973195,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "tram-stop-12-st-vincents-plaza-victoria-pde",
+    "mode": "tram",
+    "name": "Stop 12 – St Vincents Plaza/Victoria Pde",
+    "routes": [
+      "11",
+      "12",
+      "30",
+      "109"
+    ],
+    "lat": -37.808211,
+    "lng": 144.976332,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "tram-stop-11-melbourne-museum-nicholson-st",
+    "mode": "tram",
+    "name": "Stop 11 – Melbourne Museum/Nicholson St",
+    "routes": [
+      "86",
+      "96"
+    ],
+    "lat": -37.805946,
+    "lng": 144.973527,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "bus-royal-australasian-college-of-surgeons-victoria-pde",
+    "mode": "bus",
+    "name": "Royal Australasian College of Surgeons/Victoria Pde",
+    "routes": [
+      "302",
+      "303",
+      "304",
+      "305",
+      "309",
+      "318",
+      "350",
+      "905",
+      "906",
+      "907",
+      "908"
+    ],
+    "lat": -37.808092,
+    "lng": 144.972538,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "tram-stop-11-albert-st-gisborne-st",
+    "mode": "tram",
+    "name": "Stop 11 – Albert St/Gisborne St",
+    "routes": [
+      "11",
+      "12",
+      "109"
+    ],
+    "lat": -37.809542,
+    "lng": 144.975667,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "bus-eye-ear-hospital-victoria-pde",
+    "mode": "bus",
+    "name": "Eye & Ear Hospital/Victoria Pde",
+    "routes": [
+      "302",
+      "303",
+      "304",
+      "305",
+      "309",
+      "318",
+      "350",
+      "905",
+      "906",
+      "907",
+      "908"
+    ],
+    "lat": -37.808605,
+    "lng": 144.977215,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "tram-stop-13-gertrude-st-brunswick-st",
+    "mode": "tram",
+    "name": "Stop 13 – Gertrude St/Brunswick St",
+    "routes": [
+      "11",
+      "86"
+    ],
+    "lat": -37.805732,
+    "lng": 144.977219,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "tram-stop-10-albert-st-nicholson-st",
+    "mode": "tram",
+    "name": "Stop 10 – Albert St/Nicholson St",
+    "routes": [
+      "35",
+      "86",
+      "96"
+    ],
+    "lat": -37.809567,
+    "lng": 144.9729,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "bus-carlton-gardens-victoria-st",
+    "mode": "bus",
+    "name": "Carlton Gardens/Victoria St",
+    "routes": [
+      "402"
+    ],
+    "lat": -37.807483,
+    "lng": 144.97118,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  },
+  {
+    "id": "train-parliament-station",
+    "mode": "train",
+    "name": "Parliament Station",
+    "routes": [
+      "Alamein Line",
+      "Belgrave Line",
+      "Craigieburn Line",
+      "Frankston Line",
+      "Glen Waverley Line",
+      "Hurstbridge Line",
+      "Lilydale Line",
+      "Mernda Line",
+      "Upfield Line"
+    ],
+    "lat": -37.811,
+    "lng": 144.972935,
+    "source": "Transport Victoria GTFS timetable data",
+    "evidenceDate": "Oct 2026"
+  }
+]

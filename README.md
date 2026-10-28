@@ -32,10 +32,14 @@ Push to `main` and the live site updates within a minute or two. Note the site i
 |---|---|
 | `data/buildings.json` | One row per building: name, address, organisation, lat/lng |
 | `data/spaces.json` | One row per accommodation record, linked to a building by `buildingId` |
+| `data/parking.json` | Car parks: operator, access, spaces, hours, rates, source |
+| `data/transport.json` | Tram/bus stops and train stations with the routes serving them |
 | `js/config.js` | **Most edits go here**: filter options, status colours, detail-panel fields, basemaps |
 | `js/data.js` | Loads the JSON and joins spaces to their building |
 | `js/filters.js` | Pure filter logic (no DOM), used by the app and the tests |
 | `js/map.js` | Leaflet map, markers and the property card popup |
+| `js/places.js` | Car park and transport map layers + their popups |
+| `js/geo.js` | Distance, walking time and "nearest" helpers |
 | `js/measure.js` | "Measure distance" tool: click two buildings for straight-line distance + walking time |
 | `js/sidebar.js` | Filter chips and the results list |
 | `js/templates.js` | HTML for the property card and the detail panel |
@@ -70,6 +74,21 @@ Space fields:
 | `arrangement` | Lease, Licence, Sale or TBC |
 | `commercialTerms` | Free text, e.g. `"$650/sqm pa"` |
 | `fitout`, `leaseTerm`, `parking`, `source`, `evidenceDate`, `notes` | Free text |
+
+## Parking & transport data
+
+- **Car parks** (`data/parking.json`): St Vincent's car parks, capacities, hours and rates are
+  from the hospital's [Visitors Parking page](https://www.svhm.org.au/patients-visitors/campus-information/st-vincents-hospital-melbourne/visitors-parking)
+  (rates effective 1 July 2026); 59 Lonsdale St from [First Parking](https://www.firstparking.com.au/locations/59-lonsdale-street/);
+  locations and the CMMI car park from OpenStreetMap. Checked Oct 2026. Operators of the
+  hospital car parks and anything marked TBC still need confirming.
+- **Transport** (`data/transport.json`): generated from the Transport Victoria GTFS feed
+  (https://data.ptv.vic.gov.au/downloads/gtfs.zip, Oct 2026): every tram/bus stop within ~320 m
+  of the precinct plus Parliament Station, with the routes that actually stop there.
+  Re-run when timetables change significantly.
+
+The detail panel's "Getting here" section picks the nearest of each (car parks only if
+`visitorAccess` is true).
 
 ## Common changes
 

@@ -1,14 +1,21 @@
-// Leaflet map: one marker per building, one shared popup for the property card.
+// Leaflet map: one marker per building, one shared popup for the property card,
+// plus car park / transport layers and the measure tool.
 import { MAP, STATUSES } from './config.js';
 import { createMeasureTool } from './measure.js';
+import { createPlaceLayers } from './places.js';
 import { cardHtml, pin } from './templates.js';
 
-export function createMap(el, buildings, { onSelect }) {
+export function createMap(el, buildings, places, { onSelect }) {
   const map = L.map(el, { maxZoom: MAP.maxZoom });
   const basemaps = Object.fromEntries(MAP.basemaps.map(b => [b.name, L.tileLayer(b.url, b.options)]));
   Object.values(basemaps)[0].addTo(map);
-  if (MAP.basemaps.length > 1) L.control.layers(basemaps, null, { collapsed: false }).addTo(map);
   map.fitBounds(buildings.map(b => [b.lat, b.lng]), { padding: [60, 60], maxZoom: MAP.initialMaxZoom });
+
+  const measure = createMeasureTool(map, { onStart: () => onSelect(null) });
+  const placeLayers = createPlaceLayers(map, places, {
+    onClick: place => (measure.isActive() ? measure.pick(place) : placeLayers.open(place.id)),
+  });
+  L.control.layers(basemaps, placeLayers.overlays, { collapsed: true }).addTo(map);
 
   const markers = new Map(
     buildings.map(b => [
@@ -19,14 +26,12 @@ export function createMap(el, buildings, { onSelect }) {
     ]),
   );
 
-  const measure = createMeasureTool(map, { onStart: () => onSelect(null) });
-
   // closeOnClick is off because Leaflet's version runs before the marker click is
   // handled, and the re-render it causes swallows the click. Clicking empty map
   // closes the card instead (marker clicks don't reach the map).
   const popup = L.popup({ className: 'card-popup', offset: [0, -10], minWidth: 260, maxWidth: 300, autoPanPadding: [24, 24], closeOnClick: false });
   let syncing = false; // ignore popup closes we trigger ourselves
-  map.on('popupclose', () => syncing || onSelect(null));
+  map.on('popupclose', e => e.popup === popup && !syncing && onSelect(null));
   map.on('click', () => map.hasLayer(popup) && onSelect(null));
 
   // Show only buildings with a visible space, and the card for the selected one.
@@ -42,13 +47,13 @@ export function createMap(el, buildings, { onSelect }) {
     if (selected) {
       popup.setLatLng(markers.get(selectedId).getLatLng()).setContent(cardHtml(selected));
       if (!map.hasLayer(popup)) popup.openOn(map);
-    } else {
-      map.closePopup();
+    } else if (map.hasLayer(popup)) {
+      map.closePopup(popup);
     }
     syncing = false;
   }
 
-  return { update, measure, resize: () => map.invalidateSize() };
+  return { update, measure, openPlace: placeLayers.open, resize: () => map.invalidateSize() };
 }
 
 // Marker shows the space ID (or a count if a building has several matching

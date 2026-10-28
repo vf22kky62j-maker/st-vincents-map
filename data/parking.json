@@ -1,0 +1,115 @@
+[
+  {
+    "id": "svhm-parking-1",
+    "name": "St Vincent's Parking 1",
+    "address": "Building A (Main Hospital) basement",
+    "entrance": "Via Fitzroy Street, on your left",
+    "type": "Underground",
+    "operator": "St Vincent's Hospital Melbourne",
+    "access": "Patients, visitors, staff",
+    "visitorAccess": true,
+    "spaces": "197 (+6 accessible)",
+    "hours": "6.30am–9.00pm; 24/7 card access",
+    "rates": [
+      "Weekdays: $12 (0–1 hr), $20 (1–2 hrs), $24 (2–3), $26 (3–4), $28 (4–5), $30 (5–6), $32 max (6+ hrs)",
+      "Weekends & public holidays: $6 (0–1 hr), $12 (1–2 hrs), $15 max (2+ hrs)",
+      "Pension concession: $11 (show card at the car park office)"
+    ],
+    "source": "St Vincent's Hospital Melbourne — Visitors Parking",
+    "sourceUrl": "https://www.svhm.org.au/patients-visitors/campus-information/st-vincents-hospital-melbourne/visitors-parking",
+    "evidenceDate": "Oct 2026",
+    "notes": "Rates effective 1 July 2026. Car park office: Building A basement, Mon–Fri 7am–9pm, Sat–Sun 9am–5pm. The hospital doesn't name an operator; Parkopedia lists InterPark Australia (unconfirmed).",
+    "lat": -37.806853,
+    "lng": 144.975658
+  },
+  {
+    "id": "svhm-parking-2",
+    "name": "St Vincent's Parking 2 (Fitzroy Street)",
+    "address": "20–32 Fitzroy Street",
+    "entrance": "Fitzroy Street, on your right (one-way, enter from Victoria Parade)",
+    "type": "Multi-storey",
+    "operator": "St Vincent's Hospital Melbourne",
+    "access": "Patients, visitors, staff (St Vincent's Hospital & St Vincent's Private)",
+    "visitorAccess": true,
+    "spaces": "394 (+2 accessible)",
+    "hours": "6.30am–10.45pm; 24/7 with access card",
+    "rates": [
+      "Weekdays: $12 (0–1 hr), $20 (1–2 hrs), $24 (2–3), $26 (3–4), $28 (4–5), $30 (5–6), $32 max (6+ hrs)",
+      "Weekends & public holidays: $6 (0–1 hr), $12 (1–2 hrs), $15 max (2+ hrs)",
+      "Pension concession: $11 (show card at the car park office)"
+    ],
+    "source": "St Vincent's Hospital Melbourne — Visitors Parking",
+    "sourceUrl": "https://www.svhm.org.au/patients-visitors/campus-information/st-vincents-hospital-melbourne/visitors-parking",
+    "evidenceDate": "Oct 2026",
+    "notes": "Rates effective 1 July 2026. Car park office: Building A basement, Mon–Fri 7am–9pm, Sat–Sun 9am–5pm.",
+    "lat": -37.807231,
+    "lng": 144.97611
+  },
+  {
+    "id": "svhm-staff-parking",
+    "name": "St Vincent's Victoria Parade staff car park",
+    "address": "93 Victoria Parade",
+    "entrance": "93 Victoria Parade",
+    "type": "Multi-storey",
+    "operator": "St Vincent's Hospital Melbourne",
+    "access": "Staff only",
+    "visitorAccess": false,
+    "spaces": "692 (+6 accessible)",
+    "hours": "6.30am–10.45pm; 24/7 card access",
+    "rates": [
+      "Staff only — rates not published"
+    ],
+    "source": "St Vincent's Hospital Melbourne — Visitors Parking",
+    "sourceUrl": "https://www.svhm.org.au/patients-visitors/campus-information/st-vincents-hospital-melbourne/visitors-parking",
+    "evidenceDate": "Oct 2026",
+    "notes": "",
+    "lat": -37.807824,
+    "lng": 144.977644
+  },
+  {
+    "id": "cmmi-parking",
+    "name": "CMMI patient parking",
+    "address": "55 Victoria Parade",
+    "entrance": "Victoria Parade",
+    "type": "Surface",
+    "operator": "TBC",
+    "access": "Patients (private)",
+    "visitorAccess": false,
+    "spaces": "TBC",
+    "hours": "TBC",
+    "rates": [
+      "TBC"
+    ],
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/",
+    "evidenceDate": "Oct 2026",
+    "notes": "Location only; operator, capacity and rates need confirming.",
+    "lat": -37.807248,
+    "lng": 144.975668
+  },
+  {
+    "id": "first-parking-59-lonsdale",
+    "name": "First Parking — 59 Lonsdale Street",
+    "address": "59 Lonsdale Street, Melbourne",
+    "entrance": "59 Lonsdale Street",
+    "type": "Multi-storey",
+    "operator": "First Parking",
+    "access": "Public",
+    "visitorAccess": true,
+    "spaces": "472",
+    "hours": "24/7",
+    "rates": [
+      "Daily (Mon–Fri, enter 4am–4pm): $33",
+      "Evening (Mon–Fri, enter after 4pm): $20",
+      "Weekend & public holidays: $20",
+      "Overnight / 24 hr (pre-book): $35",
+      "Members get ~20% off; monthly parking on enquiry"
+    ],
+    "source": "First Parking website",
+    "sourceUrl": "https://www.firstparking.com.au/locations/59-lonsdale-street/",
+    "evidenceDate": "Oct 2026",
+    "notes": "Nearest public (non-hospital) car park found. Height clearance 1.9 m.",
+    "lat": -37.810176,
+    "lng": 144.970479
+  }
+]

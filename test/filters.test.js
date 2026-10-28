@@ -14,12 +14,12 @@ test('Scenario 1: Laboratory shows ACMD and SVI', () => {
 });
 
 test('Scenario 2: 500–1,000 sqm shows the medium-sized spaces', () => {
-  assert.deepEqual(filterBy('size', '500–1,000 sqm'), ['Brenan Hall', 'Building C – Healy Wing', 'SVI / Research Premises']);
+  assert.deepEqual(filterBy('size', '500–1,000 sqm'), ['Brenan Place', 'Building C – Healy Wing', 'SVI / Research Premises']);
 });
 
-test('Scenario 3: Potential shows Brenan Hall, Healy Wing, Daly Wing and 9 Princes Street', () => {
+test('Scenario 3: Potential shows Brenan Place, Healy Wing, Daly Wing and 9 Princes Street', () => {
   assert.deepEqual(filterBy('availability', 'Potential'), [
-    'Brenan Hall',
+    'Brenan Place',
     'Building C – Healy Wing',
     'Building D – Daly Wing',
     'SVI / Research Premises',
@@ -41,8 +41,22 @@ test('data is consistent with config', () => {
 });
 
 test('distance label shows metres/km and a rough walking time', async () => {
-  const { describeDistance } = await import('../js/measure.js');
+  const { describeDistance } = await import('../js/geo.js');
   assert.equal(describeDistance(212.4), '212 m · ~3 min walk');
   assert.equal(describeDistance(20), '20 m · ~1 min walk');
   assert.equal(describeDistance(1530), '1.53 km · ~19 min walk');
+});
+
+test('car parks and transport stops are valid, and nearest() finds the closest', async () => {
+  const { PLACE_TYPES } = await import('../js/config.js');
+  const { places } = await import('../js/data.js');
+  const { nearest } = await import('../js/geo.js');
+  assert.equal(new Set(places.map(p => p.id)).size, places.length, 'place ids must be unique');
+  for (const p of places) {
+    assert.ok(PLACE_TYPES[p.kind], `place ${p.id}: unknown kind "${p.kind}"`);
+    assert.ok(Number.isFinite(p.lat) && Number.isFinite(p.lng), `place ${p.id} needs lat/lng`);
+  }
+  const acmd = buildings.find(b => b.id === 'acmd');
+  assert.equal(nearest(acmd, places.filter(p => p.kind === 'train')).place.name, 'Parliament Station');
+  assert.equal(nearest(acmd, []), null);
 });

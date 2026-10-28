@@ -1,14 +1,7 @@
-// "Measure distance" map tool: switch it on, click two buildings, and it draws
+// "Measure distance" map tool: switch it on, click two markers, and it draws
 // a line between them with the straight-line distance and a rough walking time.
+import { describeDistance } from './geo.js';
 import { esc } from './templates.js';
-
-const WALK_METRES_PER_MIN = 80; // ~4.8 km/h
-
-export function describeDistance(metres) {
-  const distance = metres < 1000 ? `${Math.round(metres)} m` : `${(metres / 1000).toFixed(2)} km`;
-  const minutes = Math.max(1, Math.round(metres / WALK_METRES_PER_MIN));
-  return `${distance} · ~${minutes} min walk`;
-}
 
 export function createMeasureTool(map, { onStart }) {
   const layer = L.layerGroup().addTo(map);
@@ -36,11 +29,11 @@ export function createMeasureTool(map, { onStart }) {
     el.querySelector('button').setAttribute('aria-pressed', on);
     el.querySelector('button').textContent = on ? 'Done measuring' : 'Measure distance';
     map.getContainer().classList.toggle('is-measuring', on);
-    hint(on ? 'Click a building to measure from.' : '');
+    hint(on ? 'Click a building, car park or stop to measure from.' : '');
     if (on) onStart();
   }
 
-  // Called by map.js when a marker is clicked while measuring.
+  // Called by map.js when a marker (building, car park or stop) is clicked while measuring.
   function pick(building) {
     if (picks.length === 2 || picks[0]?.id === building.id) {
       picks = [];
@@ -48,14 +41,14 @@ export function createMeasureTool(map, { onStart }) {
     }
     picks.push(building);
     L.circleMarker([building.lat, building.lng], { radius: 20, className: 'measure-ring', interactive: false }).addTo(layer);
-    if (picks.length === 1) return hint(`From <strong>${esc(building.name)}</strong>. Now click a second building.`);
+    if (picks.length === 1) return hint(`From <strong>${esc(building.name)}</strong>. Now click a second point.`);
 
     const [a, b] = picks.map(p => L.latLng(p.lat, p.lng));
     const text = describeDistance(map.distance(a, b));
     L.polyline([a, b], { className: 'measure-line', interactive: false })
       .bindTooltip(text, { permanent: true, direction: 'center', className: 'measure-label' })
       .addTo(layer);
-    hint(`<strong>${esc(picks[0].name)}</strong> → <strong>${esc(building.name)}</strong><br>${text} (straight line)<br><span class="muted">Click another building to measure again.</span>`);
+    hint(`<strong>${esc(picks[0].name)}</strong> → <strong>${esc(building.name)}</strong><br>${text} (straight line)<br><span class="muted">Click another point to measure again.</span>`);
   }
 
   function hint(html) {

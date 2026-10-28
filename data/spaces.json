@@ -3,7 +3,10 @@
     "id": "01",
     "buildingId": "acmd",
     "name": "",
-    "type": ["Research", "Laboratory"],
+    "type": [
+      "Research",
+      "Laboratory"
+    ],
     "size": 4500,
     "availability": "Occupied",
     "arrangement": "Lease",
@@ -17,9 +20,13 @@
   },
   {
     "id": "02",
-    "buildingId": "brenan-hall",
+    "buildingId": "brenan-place",
     "name": "",
-    "type": ["Office", "Event", "Business"],
+    "type": [
+      "Office",
+      "Event",
+      "Business"
+    ],
     "size": 650,
     "availability": "Potential",
     "arrangement": "Licence",
@@ -35,8 +42,14 @@
     "id": "03",
     "buildingId": "building-b",
     "name": "Consulting suites",
-    "type": ["Medical", "Consulting"],
-    "size": [32, 44],
+    "type": [
+      "Medical",
+      "Consulting"
+    ],
+    "size": [
+      32,
+      44
+    ],
     "availability": "Historical",
     "arrangement": "Licence",
     "commercialTerms": "$750/sqm pa",
@@ -51,7 +64,10 @@
     "id": "04",
     "buildingId": "healy-wing",
     "name": "",
-    "type": ["Clinical", "Consulting"],
+    "type": [
+      "Clinical",
+      "Consulting"
+    ],
     "size": 850,
     "availability": "Potential",
     "arrangement": "Lease",
@@ -67,7 +83,10 @@
     "id": "05",
     "buildingId": "daly-wing",
     "name": "",
-    "type": ["Specialist", "Clinical"],
+    "type": [
+      "Specialist",
+      "Clinical"
+    ],
     "size": 1200,
     "availability": "Potential",
     "arrangement": "Lease",
@@ -83,7 +102,10 @@
     "id": "06",
     "buildingId": "svi-nicholson",
     "name": "",
-    "type": ["Research", "Laboratory"],
+    "type": [
+      "Research",
+      "Laboratory"
+    ],
     "size": 2800,
     "availability": "Occupied",
     "arrangement": "Lease",
@@ -99,7 +121,10 @@
     "id": "07",
     "buildingId": "svi-princes",
     "name": "",
-    "type": ["Research", "Office"],
+    "type": [
+      "Research",
+      "Office"
+    ],
     "size": 600,
     "availability": "Potential",
     "arrangement": "Lease",
@@ -115,7 +140,10 @@
     "id": "08",
     "buildingId": "svph",
     "name": "",
-    "type": ["Clinical", "Specialist"],
+    "type": [
+      "Clinical",
+      "Specialist"
+    ],
     "size": 1500,
     "availability": "TBC",
     "arrangement": "TBC",

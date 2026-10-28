@@ -1,5 +1,7 @@
 import buildingRows from '../data/buildings.json' with { type: 'json' };
 import spaceRows from '../data/spaces.json' with { type: 'json' };
+import parkingRows from '../data/parking.json' with { type: 'json' };
+import transportRows from '../data/transport.json' with { type: 'json' };
 
 // Buildings and spaces are stored separately (one building → many spaces).
 // Here each space gets a reference to its building, plus the building fields
@@ -31,3 +33,10 @@ export function joinData(buildings, spaces) {
 const sqm = n => n.toLocaleString('en-AU');
 
 export const { buildings, spaces } = joinData(buildingRows, spaceRows);
+
+// Car parks and public transport stops, as one list. `kind` is a key of
+// PLACE_TYPES in config.js: parking, tram, bus or train.
+export const places = [
+  ...parkingRows.map(p => ({ ...p, kind: 'parking' })),
+  ...transportRows.map(t => ({ ...t, kind: t.mode })),
+];

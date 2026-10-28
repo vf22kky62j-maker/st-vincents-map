@@ -82,6 +82,16 @@ export const FILTERS = [
   },
 ];
 
+// Car parks and public transport, shown as extra map layers (toggle them in
+// the layer control) and as "Getting here" in the detail panel. `glyph` is the
+// letter on the marker; `nearestFrom` limits which places count as "nearest".
+export const PLACE_TYPES = {
+  parking: { label: 'Car parks', glyph: 'P', color: '#1d4ed8', nearestLabel: 'Nearest visitor car park', nearestFrom: p => p.visitorAccess },
+  tram: { label: 'Tram stops', glyph: 'T', color: '#4d7c0f', nearestLabel: 'Nearest tram stop' },
+  bus: { label: 'Bus stops', glyph: 'B', color: '#a16207', nearestLabel: 'Nearest bus stop' },
+  train: { label: 'Train stations', glyph: 'R', color: '#0e7490', nearestLabel: 'Nearest train station' },
+};
+
 // Rows shown in the property detail panel: [label, field on the space record].
 // Building fields (address, organisation) are copied onto each space in data.js.
 export const DETAIL_FIELDS = [

@@ -1,5 +1,7 @@
 // Wires data, filters, map and panels together. All UI is re-rendered from `state`.
-import { buildings, spaces } from './data.js';
+import { PLACE_TYPES } from './config.js';
+import { buildings, places, spaces } from './data.js';
+import { nearest } from './geo.js';
 import { applyFilters, emptySelection, hasSelection, optionCounts } from './filters.js';
 import { createMap } from './map.js';
 import { renderFilters, renderResults } from './sidebar.js';
@@ -13,7 +15,7 @@ const state = {
   detailId: null, // space shown in the detail panel
 };
 
-const map = createMap($('#map'), buildings, { onSelect: selectBuilding });
+const map = createMap($('#map'), buildings, places, { onSelect: selectBuilding });
 
 function render() {
   const visible = applyFilters(spaces, state.selection);
@@ -32,9 +34,20 @@ function renderDetail() {
   const panel = $('#detail');
   const wasOpen = !panel.hidden;
   panel.hidden = !space;
-  panel.innerHTML = space ? detailHtml(space) : '';
+  panel.innerHTML = space ? detailHtml(space, accessFor(space.building)) : '';
   document.body.classList.toggle('has-detail', !!space);
   if (wasOpen !== !!space) map.resize(); // map area changed width
+}
+
+// Nearest car park / tram / bus / train to a building, for "Getting here".
+function accessFor(building) {
+  return Object.entries(PLACE_TYPES)
+    .map(([kind, type]) => {
+      const candidates = places.filter(p => p.kind === kind && (type.nearestFrom?.(p) ?? true));
+      const found = nearest(building, candidates);
+      return found && { label: type.nearestLabel, ...found };
+    })
+    .filter(Boolean);
 }
 
 function selectBuilding(buildingId, spaceId) {
@@ -75,6 +88,8 @@ document.addEventListener('click', e => {
     state.detailId = open.dataset.detail;
     render();
   }
+  const place = e.target.closest('[data-place]');
+  if (place) map.openPlace(place.dataset.place);
   if (e.target.closest('[data-close]')) {
     state.detailId = null;
     render();
