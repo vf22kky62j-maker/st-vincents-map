@@ -34,6 +34,7 @@ Push to `main` and the live site updates within a minute or two. Note the site i
 | `data/spaces.json` | One row per accommodation record, linked to a building by `buildingId` |
 | `data/parking.json` | Car parks: operator, access, spaces, hours, rates, source |
 | `data/transport.json` | Tram/bus stops and train stations with the routes serving them |
+| `data/amenities.json` | Public bike parking and nearby shops / cafés (`kind`: `bike` or `retail`) |
 | `js/config.js` | **Most edits go here**: filter options, status colours, detail-panel fields, basemaps |
 | `js/data.js` | Loads the JSON and joins spaces to their building |
 | `js/filters.js` | Pure filter logic (no DOM), used by the app and the tests |
@@ -86,6 +87,14 @@ Space fields:
   (https://data.ptv.vic.gov.au/downloads/gtfs.zip, Oct 2026): every tram/bus stop within ~320 m
   of the precinct plus Parliament Station, with the routes that actually stop there.
   Re-run when timetables change significantly.
+
+- **Bike parking, shops & food** (`data/amenities.json`): public bike racks, cafés and shops
+  from OpenStreetMap (Oct 2026), plus the hospital's own outlets from its
+  [Cafes and retail page](https://svhm.org.au/patients-visitors/visiting-hours/cafes-and-retail).
+  These layers start switched off; turn them on in the layer control.
+- **End-of-trip & on-site retail** (fields on each building in `data/buildings.json`):
+  Brenan Place from [IFM Investors](https://www.ifminvestors.com/en-au/capabilities/real-estate/our-real-estate-portfolio/brenan-place)
+  (data as at 30 Jun 2026); hospital buildings from the hospital's retail page. Others are TBC.
 
 The detail panel's "Getting here" section picks the nearest of each (car parks only if
 `visitorAccess` is true).

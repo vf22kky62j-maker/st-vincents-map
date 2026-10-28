@@ -91,9 +91,15 @@ export function placePopupHtml(p) {
       <p class="card-type">Rates</p>
       <ul class="rates">${p.rates.map(r => `<li>${esc(r)}</li>`).join('')}</ul>
       ${p.notes ? `<p class="card-note">${esc(p.notes)}</p>` : ''}`
-    : `
+    : p.routes
+    ? `
       <p class="card-type">${p.kind === 'train' ? 'Lines' : 'Routes'}</p>
-      <p class="routes">${p.routes.map(r => `<span class="route">${esc(r)}</span>`).join('')}</p>`;
+      <p class="routes">${p.routes.map(r => `<span class="route">${esc(r)}</span>`).join('')}</p>`
+    : `
+      <dl class="place-facts">
+        ${field('Type', p.category)}
+        ${Object.entries(p.details ?? {}).map(([label, value]) => field(label, value)).join('')}
+      </dl>`;
   return `
     <article class="card">
       <p class="eyebrow">${placeIcon(p.kind)} ${esc(type.label.replace(/s$/, ''))}</p>

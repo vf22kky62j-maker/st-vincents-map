@@ -1,0 +1,847 @@
+[
+  {
+    "id": "cafe-vincents",
+    "kind": "retail",
+    "name": "Café Vincent's (Zouki)",
+    "category": "Café / food",
+    "address": "Building E – Aikenhead Wing, cnr Victoria Pde & Nicholson St",
+    "details": {
+      "Hours": "Mon–Fri 6.30am–8pm; Sat–Sun 7.30am–7pm",
+      "Note": "Position approximate (corner of Victoria Pde & Nicholson St)."
+    },
+    "source": "St Vincent's Hospital Melbourne — Cafes and retail",
+    "sourceUrl": "https://svhm.org.au/patients-visitors/visiting-hours/cafes-and-retail",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.8076,
+    "lng": 144.9735
+  },
+  {
+    "id": "daly-wing-coffee",
+    "kind": "retail",
+    "name": "Coffee & refreshments (Daly Wing)",
+    "category": "Café / food",
+    "address": "Building D – Daly Wing, ground floor",
+    "details": {
+      "Hours": "Not stated"
+    },
+    "source": "St Vincent's Hospital Melbourne — Cafes and retail",
+    "sourceUrl": "https://svhm.org.au/patients-visitors/visiting-hours/cafes-and-retail",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80712,
+    "lng": 144.97442
+  },
+  {
+    "id": "svhm-florist",
+    "kind": "retail",
+    "name": "Florist (Building B)",
+    "category": "Shop",
+    "address": "Building B – 55 Victoria Parade",
+    "details": {
+      "Hours": "Weekdays 8am–8pm; weekends 10am–8pm",
+      "Phone": "(03) 9417 4093"
+    },
+    "source": "St Vincent's Hospital Melbourne — Cafes and retail",
+    "sourceUrl": "https://svhm.org.au/patients-visitors/visiting-hours/cafes-and-retail",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80774,
+    "lng": 144.97549
+  },
+  {
+    "id": "st-evins-cafe",
+    "kind": "retail",
+    "name": "St Evin's Cafe (Zouki)",
+    "category": "Café / food",
+    "address": "St Vincent's Private Hospital, ground floor near main entrance",
+    "details": {
+      "Hours": "Not stated"
+    },
+    "source": "Zouki — St Evin's Cafe",
+    "sourceUrl": "https://zouki.com.au/locations/st-vincents-private-hospital-and-mercy/st-evins-cafe/",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80756,
+    "lng": 144.97602
+  },
+  {
+    "id": "fitzroy-south-lpo-373875860",
+    "kind": "retail",
+    "name": "Fitzroy South LPO",
+    "category": "Post office",
+    "address": "54 Brunswick Street",
+    "details": {
+      "Kind": "post office",
+      "Hours": "Mo-Fr 08:00-17:30; Sa 09:00-12:00"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/373875860",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805901,
+    "lng": 144.977369
+  },
+  {
+    "id": "garden-view-cafe-595561852",
+    "kind": "retail",
+    "name": "Garden View Cafe",
+    "category": "Café / food",
+    "address": "44 Nicholson Street",
+    "details": {
+      "Kind": "cafe",
+      "Hours": "Mo-Fr 06:00-17:00"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/595561852",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80604,
+    "lng": 144.973766
+  },
+  {
+    "id": "cafe-ecco-600643786",
+    "kind": "retail",
+    "name": "Cafe Ecco",
+    "category": "Café / food",
+    "address": "6-8 Nicholson Street",
+    "details": {
+      "Kind": "cafe"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/600643786",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.808354,
+    "lng": 144.973813
+  },
+  {
+    "id": "breizoz-cr-perie-629539431",
+    "kind": "retail",
+    "name": "Breizoz Crêperie",
+    "category": "Café / food",
+    "address": "45 Brunswick Street",
+    "details": {
+      "Kind": "restaurant",
+      "Hours": "Su-Th 10:00-22:00; Fr-Sa 10:00-23:00"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/629539431",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805812,
+    "lng": 144.976819
+  },
+  {
+    "id": "ruben-s-restaurant-645562533",
+    "kind": "retail",
+    "name": "Ruben's Restaurant",
+    "category": "Café / food",
+    "address": "59 Brunswick Street",
+    "details": {
+      "Kind": "restaurant"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/645562533",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805466,
+    "lng": 144.97707
+  },
+  {
+    "id": "auntie-mai-s-652315780",
+    "kind": "retail",
+    "name": "Auntie Mai's",
+    "category": "Café / food",
+    "address": "92 Gertrude Street",
+    "details": {
+      "Kind": "cafe"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/652315780",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805909,
+    "lng": 144.977589
+  },
+  {
+    "id": "lark-store-652318376",
+    "kind": "retail",
+    "name": "Lark Store",
+    "category": "Shop",
+    "address": "94 Gertrude Street",
+    "details": {
+      "Shop type": "gift",
+      "Hours": "Mo-Sa 11:00-16:00"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/652318376",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80591,
+    "lng": 144.977636
+  },
+  {
+    "id": "auntie-mai-s-652335060",
+    "kind": "retail",
+    "name": "Auntie Mai's",
+    "category": "Café / food",
+    "address": "96 Gertrude Street",
+    "details": {
+      "Kind": "restaurant"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/652335060",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805918,
+    "lng": 144.977698
+  },
+  {
+    "id": "radio-652343381",
+    "kind": "retail",
+    "name": "Radio",
+    "category": "Café / food",
+    "address": "79 Gertrude Street",
+    "details": {
+      "Kind": "cafe"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/652343381",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805572,
+    "lng": 144.976576
+  },
+  {
+    "id": "cutler-co-652348899",
+    "kind": "retail",
+    "name": "Cutler & Co.",
+    "category": "Café / food",
+    "address": "53-57 Gertrude Street",
+    "details": {
+      "Kind": "restaurant"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/652348899",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805482,
+    "lng": 144.975936
+  },
+  {
+    "id": "caffettino-652352680",
+    "kind": "retail",
+    "name": "Caffettino",
+    "category": "Café / food",
+    "address": "43 Gertrude Street",
+    "details": {
+      "Kind": "cafe"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/652352680",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80547,
+    "lng": 144.975633
+  },
+  {
+    "id": "sir-osborn-669129409",
+    "kind": "retail",
+    "name": "Sir Osborn",
+    "category": "Café / food",
+    "address": "",
+    "details": {
+      "Kind": "cafe",
+      "Hours": "Mo-Fr 05:30-15:00; Sa-Su off"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/669129409",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.809092,
+    "lng": 144.973293
+  },
+  {
+    "id": "the-aegean-691192064",
+    "kind": "retail",
+    "name": "The Aegean",
+    "category": "Café / food",
+    "address": "19 Brunswick Street",
+    "details": {
+      "Kind": "restaurant"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/691192064",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.806911,
+    "lng": 144.976829
+  },
+  {
+    "id": "bike-1053652282",
+    "kind": "bike",
+    "name": "Public bike parking (2 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "2 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/1053652282",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.808463,
+    "lng": 144.973253
+  },
+  {
+    "id": "urban-lupe-2186724868",
+    "kind": "retail",
+    "name": "Urban Lupe",
+    "category": "Shop",
+    "address": "102 Gertrude Street",
+    "details": {
+      "Shop type": "clothes"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/2186724868",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805932,
+    "lng": 144.977854
+  },
+  {
+    "id": "tattoo-magic-2186726749",
+    "kind": "retail",
+    "name": "Tattoo Magic",
+    "category": "Shop",
+    "address": "100 Gertrude Street",
+    "details": {
+      "Shop type": "tattoo"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/2186726749",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805924,
+    "lng": 144.97776
+  },
+  {
+    "id": "cantina-della-casa-2217763071",
+    "kind": "retail",
+    "name": "Cantina della Casa",
+    "category": "Shop",
+    "address": "13 Gertrude Street",
+    "details": {
+      "Shop type": "deli"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/2217763071",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805373,
+    "lng": 144.974876
+  },
+  {
+    "id": "ganim-s-store-2495728314",
+    "kind": "retail",
+    "name": "Ganim's Store",
+    "category": "Shop",
+    "address": "61 Brunswick Street",
+    "details": {
+      "Shop type": "kitchen"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/2495728314",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805346,
+    "lng": 144.977087
+  },
+  {
+    "id": "east-side-story-2495730333",
+    "kind": "retail",
+    "name": "East Side Story",
+    "category": "Café / food",
+    "address": "",
+    "details": {
+      "Kind": "cafe"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/2495730333",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80846,
+    "lng": 144.974797
+  },
+  {
+    "id": "casa-ciuccio-2527868214",
+    "kind": "retail",
+    "name": "Casa Ciuccio",
+    "category": "Café / food",
+    "address": "15 Gertrude Street",
+    "details": {
+      "Kind": "restaurant"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/2527868214",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805377,
+    "lng": 144.974935
+  },
+  {
+    "id": "helen-gory-galerie-2527868215",
+    "kind": "retail",
+    "name": "Helen Gory Galerie",
+    "category": "Shop",
+    "address": "108-110 Gertrude Street",
+    "details": {
+      "Shop type": "art"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/2527868215",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805947,
+    "lng": 144.977972
+  },
+  {
+    "id": "bike-2692540568",
+    "kind": "bike",
+    "name": "Public bike parking (12 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "12 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/2692540568",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.808814,
+    "lng": 144.975925
+  },
+  {
+    "id": "svhm-pharmacy",
+    "kind": "retail",
+    "name": "HealthSmart Pharmacy (Building B)",
+    "category": "Pharmacy",
+    "address": "Building B – 55 Victoria Parade",
+    "details": {
+      "Hours": "Weekdays 9am–5.30pm (closed public holidays)"
+    },
+    "source": "St Vincent's Hospital Melbourne — Cafes and retail",
+    "sourceUrl": "https://svhm.org.au/patients-visitors/visiting-hours/cafes-and-retail",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.807805,
+    "lng": 144.975502
+  },
+  {
+    "id": "sparrow-s-philly-cheesesteaks-4162611890",
+    "kind": "retail",
+    "name": "Sparrow's Philly Cheesesteaks",
+    "category": "Café / food",
+    "address": "30-32 Gertrude Street",
+    "details": {
+      "Kind": "restaurant",
+      "Hours": "Mo-Su 12:00-00:30, Su 12:00-22:30"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/4162611890",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805794,
+    "lng": 144.975147
+  },
+  {
+    "id": "sunspel-4243992394",
+    "kind": "retail",
+    "name": "Sunspel",
+    "category": "Shop",
+    "address": "77 Gertrude Street",
+    "details": {
+      "Shop type": "clothes"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/4243992394",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805572,
+    "lng": 144.976488
+  },
+  {
+    "id": "bike-4695318327",
+    "kind": "bike",
+    "name": "Public bike parking (20 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "20 bikes"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/4695318327",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.807689,
+    "lng": 144.974469
+  },
+  {
+    "id": "courtyard-55-6659670689",
+    "kind": "retail",
+    "name": "Courtyard 55",
+    "category": "Café / food",
+    "address": "",
+    "details": {
+      "Kind": "cafe"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/6659670689",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.807618,
+    "lng": 144.975506
+  },
+  {
+    "id": "svhm-newsagent",
+    "kind": "retail",
+    "name": "Eastern Hill Lotto (newsagent / lotto)",
+    "category": "Shop",
+    "address": "Building B – 55 Victoria Parade",
+    "details": {
+      "Hours": "Weekdays 8am–5.30pm",
+      "Also": "Dry cleaning, public transport tickets, stationery, cards"
+    },
+    "source": "St Vincent's Hospital Melbourne — Cafes and retail",
+    "sourceUrl": "https://svhm.org.au/patients-visitors/visiting-hours/cafes-and-retail",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.807693,
+    "lng": 144.974913
+  },
+  {
+    "id": "mr-speaker-6693608929",
+    "kind": "retail",
+    "name": "Mr Speaker",
+    "category": "Café / food",
+    "address": "2 Casselden Place",
+    "details": {
+      "Kind": "cafe",
+      "Hours": "Mo-Sa 08:00-18:00"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/6693608929",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80921,
+    "lng": 144.971576
+  },
+  {
+    "id": "basement-espresso-7053362730",
+    "kind": "retail",
+    "name": "Basement Espresso",
+    "category": "Café / food",
+    "address": "",
+    "details": {
+      "Kind": "cafe"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/7053362730",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.808766,
+    "lng": 144.977967
+  },
+  {
+    "id": "bike-10233009557",
+    "kind": "bike",
+    "name": "Public bike parking (4 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "4 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/10233009557",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.807902,
+    "lng": 144.975496
+  },
+  {
+    "id": "marion-wine-bar-10704129005",
+    "kind": "retail",
+    "name": "Marion Wine Bar",
+    "category": "Café / food",
+    "address": "",
+    "details": {
+      "Kind": "bar",
+      "Hours": "Mo-Su 12:00-11:00"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/10704129005",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80548,
+    "lng": 144.975852
+  },
+  {
+    "id": "sonido-10708134406",
+    "kind": "retail",
+    "name": "Sonido",
+    "category": "Café / food",
+    "address": "69 Gertrude Street",
+    "details": {
+      "Kind": "cafe",
+      "Hours": "Mo-Fr 07:30-15:00; Sa-Su 08:30-15:00"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/10708134406",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805573,
+    "lng": 144.976379
+  },
+  {
+    "id": "roxxi-sioux-11556066973",
+    "kind": "retail",
+    "name": "Roxxi & Sioux",
+    "category": "Shop",
+    "address": "92 Gertrude Street",
+    "details": {
+      "Shop type": "tattoo"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/11556066973",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805914,
+    "lng": 144.977522
+  },
+  {
+    "id": "best-jumpers-11556066974",
+    "kind": "retail",
+    "name": "Best Jumpers",
+    "category": "Shop",
+    "address": "90 Gertrude Street",
+    "details": {
+      "Shop type": "clothes"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/11556066974",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805907,
+    "lng": 144.977475
+  },
+  {
+    "id": "tamura-sake-bar-12198120440",
+    "kind": "retail",
+    "name": "Tamura Sake Bar",
+    "category": "Café / food",
+    "address": "43 Gertrude Street",
+    "details": {
+      "Kind": "bar"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/12198120440",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805473,
+    "lng": 144.975685
+  },
+  {
+    "id": "phillip-lea-12418146002",
+    "kind": "retail",
+    "name": "Phillip & Lea",
+    "category": "Shop",
+    "address": "65 Gertrude Street",
+    "details": {
+      "Shop type": "houseware"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/12418146002",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805521,
+    "lng": 144.976238
+  },
+  {
+    "id": "bike-13203818811",
+    "kind": "bike",
+    "name": "Public bike parking (4 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "4 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/13203818811",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.808307,
+    "lng": 144.974329
+  },
+  {
+    "id": "bike-13203820627",
+    "kind": "bike",
+    "name": "Public bike parking (2 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "2 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/13203820627",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80838,
+    "lng": 144.974978
+  },
+  {
+    "id": "bike-13203821055",
+    "kind": "bike",
+    "name": "Public bike parking (4 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "4 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/13203821055",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.808391,
+    "lng": 144.975102
+  },
+  {
+    "id": "bike-13203823350",
+    "kind": "bike",
+    "name": "Public bike parking (2 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "2 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/13203823350",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.808372,
+    "lng": 144.974928
+  },
+  {
+    "id": "bike-13616252754",
+    "kind": "bike",
+    "name": "Public bike parking (2 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "2 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/13616252754",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805748,
+    "lng": 144.976885
+  },
+  {
+    "id": "bike-13616255563",
+    "kind": "bike",
+    "name": "Public bike parking",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Rack type": "floor",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/13616255563",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805482,
+    "lng": 144.974074
+  },
+  {
+    "id": "bike-13616265615",
+    "kind": "bike",
+    "name": "Public bike parking (2 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "2 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/13616265615",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805755,
+    "lng": 144.976933
+  },
+  {
+    "id": "bike-14134306464",
+    "kind": "bike",
+    "name": "Public bike parking",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Rack type": "floor",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/14134306464",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805382,
+    "lng": 144.97416
+  },
+  {
+    "id": "bike-14311412699",
+    "kind": "bike",
+    "name": "Public bike parking (4 bikes)",
+    "category": "Bike parking",
+    "address": "",
+    "details": {
+      "Capacity": "4 bikes",
+      "Rack type": "stands",
+      "Covered": "no"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/node/14311412699",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.809257,
+    "lng": 144.971946
+  },
+  {
+    "id": "the-catfish-223117231",
+    "kind": "retail",
+    "name": "The Catfish",
+    "category": "Café / food",
+    "address": "30-32 Gertrude Street",
+    "details": {
+      "Kind": "pub",
+      "Hours": "Mo-Su 12:00-01:00"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/way/223117231",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.80575,
+    "lng": 144.975165
+  },
+  {
+    "id": "the-workers-club-334971917",
+    "kind": "retail",
+    "name": "The Workers Club",
+    "category": "Café / food",
+    "address": "51-55 Brunswick Street",
+    "details": {
+      "Kind": "pub"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/way/334971917",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.805576,
+    "lng": 144.976945
+  },
+  {
+    "id": "victoria-s-secret-bar-cafe-797916341",
+    "kind": "retail",
+    "name": "Victoria's Secret Bar & Cafe",
+    "category": "Café / food",
+    "address": "",
+    "details": {
+      "Kind": "bar"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/way/797916341",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.808396,
+    "lng": 144.9745
+  },
+  {
+    "id": "metropole-cafe-1034357041",
+    "kind": "retail",
+    "name": "Metropole Cafe",
+    "category": "Café / food",
+    "address": "44 Brunswick Street",
+    "details": {
+      "Kind": "cafe"
+    },
+    "source": "OpenStreetMap",
+    "sourceUrl": "https://www.openstreetmap.org/way/1034357041",
+    "evidenceDate": "Oct 2026",
+    "lat": -37.806273,
+    "lng": 144.977282
+  }
+]

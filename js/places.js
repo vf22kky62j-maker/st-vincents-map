@@ -4,7 +4,8 @@ import { PLACE_TYPES } from './config.js';
 import { placeIcon, placePopupHtml } from './templates.js';
 
 export function createPlaceLayers(map, places, { onClick }) {
-  const layers = Object.fromEntries(Object.keys(PLACE_TYPES).map(kind => [kind, L.layerGroup().addTo(map)]));
+  const layers = Object.fromEntries(Object.keys(PLACE_TYPES).map(kind => [kind, L.layerGroup()]));
+  for (const [kind, type] of Object.entries(PLACE_TYPES)) if (!type.hidden) layers[kind].addTo(map);
   const popup = L.popup({ className: 'card-popup', offset: [0, -8], minWidth: 240, maxWidth: 320, autoPanPadding: [24, 24] });
   const markers = new Map();
 

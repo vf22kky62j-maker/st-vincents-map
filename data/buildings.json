@@ -5,7 +5,10 @@
     "address": "27 Victoria Parade",
     "organisation": "ACMD / precinct partners",
     "lat": -37.807524,
-    "lng": 144.973724
+    "lng": 144.973724,
+    "endOfTrip": "TBC",
+    "onSiteRetail": "TBC — connected at ground level to Brenan Place",
+    "facilitiesSource": "IFM Investors — Brenan Place (data as at 30 Jun 2026)"
   },
   {
     "id": "brenan-place",
@@ -13,7 +16,10 @@
     "address": "31 Victoria Parade",
     "organisation": "ACMD",
     "lat": -37.807583,
-    "lng": 144.974245
+    "lng": 144.974245,
+    "endOfTrip": "End-of-trip facilities with 93 bike parks (showers/lockers not detailed)",
+    "onSiteRetail": "Retail and café space; business lounge and event space in the restored Brenan Hall",
+    "facilitiesSource": "IFM Investors — Brenan Place (data as at 30 Jun 2026)"
   },
   {
     "id": "building-b",
@@ -21,7 +27,10 @@
     "address": "55 Victoria Parade",
     "organisation": "St Vincent's Hospital Melbourne",
     "lat": -37.80769,
-    "lng": 144.975531
+    "lng": 144.975531,
+    "endOfTrip": "TBC",
+    "onSiteRetail": "Café (Courtyard 55); HealthSmart Pharmacy (weekdays 9am–5.30pm); newsagent / lotto (weekdays 8am–5.30pm); florist (weekdays 8am–8pm, weekends 10am–8pm)",
+    "facilitiesSource": "St Vincent's Hospital Melbourne — Cafes and retail; OpenStreetMap"
   },
   {
     "id": "healy-wing",
@@ -29,7 +38,10 @@
     "address": "41 Victoria Parade",
     "organisation": "St Vincent's Hospital Melbourne",
     "lat": -37.80753,
-    "lng": 144.975009
+    "lng": 144.975009,
+    "endOfTrip": "TBC",
+    "onSiteRetail": "TBC",
+    "facilitiesSource": ""
   },
   {
     "id": "daly-wing",
@@ -37,7 +49,10 @@
     "address": "41 Victoria Parade",
     "organisation": "St Vincent's Hospital Melbourne",
     "lat": -37.807166,
-    "lng": 144.974353
+    "lng": 144.974353,
+    "endOfTrip": "TBC",
+    "onSiteRetail": "Coffee and refreshments, ground floor (near St Vincent's Clinics)",
+    "facilitiesSource": "St Vincent's Hospital Melbourne — Cafes and retail"
   },
   {
     "id": "svi-nicholson",
@@ -45,7 +60,10 @@
     "address": "20 Nicholson Street",
     "organisation": "St Vincent's Institute of Medical Research",
     "lat": -37.807023,
-    "lng": 144.973617
+    "lng": 144.973617,
+    "endOfTrip": "TBC",
+    "onSiteRetail": "TBC",
+    "facilitiesSource": ""
   },
   {
     "id": "svi-princes",
@@ -53,7 +71,10 @@
     "address": "9 Princes Street",
     "organisation": "St Vincent's Institute of Medical Research",
     "lat": -37.806651,
-    "lng": 144.973917
+    "lng": 144.973917,
+    "endOfTrip": "TBC",
+    "onSiteRetail": "TBC",
+    "facilitiesSource": ""
   },
   {
     "id": "svph",
@@ -61,6 +82,9 @@
     "address": "59 Victoria Parade",
     "organisation": "St Vincent's Private Hospital",
     "lat": -37.80748,
-    "lng": 144.976071
+    "lng": 144.976071,
+    "endOfTrip": "TBC",
+    "onSiteRetail": "St Evin's Cafe (Zouki), ground floor near main entrance",
+    "facilitiesSource": "Zouki — St Evin's Cafe"
   }
 ]

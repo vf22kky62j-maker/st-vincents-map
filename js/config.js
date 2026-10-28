@@ -84,12 +84,15 @@ export const FILTERS = [
 
 // Car parks and public transport, shown as extra map layers (toggle them in
 // the layer control) and as "Getting here" in the detail panel. `glyph` is the
-// letter on the marker; `nearestFrom` limits which places count as "nearest".
+// letter on the marker; `nearestFrom` limits which places count as "nearest";
+// `hidden` layers start switched off.
 export const PLACE_TYPES = {
   parking: { label: 'Car parks', glyph: 'P', color: '#1d4ed8', nearestLabel: 'Nearest visitor car park', nearestFrom: p => p.visitorAccess },
   tram: { label: 'Tram stops', glyph: 'T', color: '#4d7c0f', nearestLabel: 'Nearest tram stop' },
   bus: { label: 'Bus stops', glyph: 'B', color: '#a16207', nearestLabel: 'Nearest bus stop' },
   train: { label: 'Train stations', glyph: 'R', color: '#0e7490', nearestLabel: 'Nearest train station' },
+  bike: { label: 'Bike parking', glyph: 'C', color: '#be185d', nearestLabel: 'Nearest public bike parking', hidden: true },
+  retail: { label: 'Shops & food', glyph: 'S', color: '#7c2d12', nearestLabel: 'Nearest café / food', nearestFrom: p => p.category === 'Café / food', hidden: true },
 };
 
 // Rows shown in the property detail panel: [label, field on the space record].
@@ -104,6 +107,9 @@ export const DETAIL_FIELDS = [
   ['Lease term', 'leaseTerm'],
   ['Parking', 'parking'],
   ['Organisation', 'organisation'],
+  ['End-of-trip facilities', 'endOfTrip'],
+  ['On-site retail', 'onSiteRetail'],
+  ['Facilities source', 'facilitiesSource'],
   ['Source', 'source'],
   ['Evidence date', 'evidenceDate'],
   ['Notes', 'notes'],
