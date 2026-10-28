@@ -39,3 +39,10 @@ test('data is consistent with config', () => {
   }
   assert.equal(new Set(spaces.map(s => s.id)).size, spaces.length, 'space ids must be unique');
 });
+
+test('distance label shows metres/km and a rough walking time', async () => {
+  const { describeDistance } = await import('../js/measure.js');
+  assert.equal(describeDistance(212.4), '212 m · ~3 min walk');
+  assert.equal(describeDistance(20), '20 m · ~1 min walk');
+  assert.equal(describeDistance(1530), '1.53 km · ~19 min walk');
+});

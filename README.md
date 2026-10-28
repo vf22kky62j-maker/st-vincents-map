@@ -36,6 +36,7 @@ Push to `main` and the live site updates within a minute or two. Note the site i
 | `js/data.js` | Loads the JSON and joins spaces to their building |
 | `js/filters.js` | Pure filter logic (no DOM), used by the app and the tests |
 | `js/map.js` | Leaflet map, markers and the property card popup |
+| `js/measure.js` | "Measure distance" tool: click two buildings for straight-line distance + walking time |
 | `js/sidebar.js` | Filter chips and the results list |
 | `js/templates.js` | HTML for the property card and the detail panel |
 | `js/app.js` | Holds the UI state and wires everything together |

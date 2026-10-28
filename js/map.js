@@ -1,5 +1,6 @@
 // Leaflet map: one marker per building, one shared popup for the property card.
 import { MAP, STATUSES } from './config.js';
+import { createMeasureTool } from './measure.js';
 import { cardHtml, pin } from './templates.js';
 
 export function createMap(el, buildings, { onSelect }) {
@@ -14,13 +15,19 @@ export function createMap(el, buildings, { onSelect }) {
       b.id,
       L.marker([b.lat, b.lng], { title: b.name, riseOnHover: true })
         .bindTooltip(b.name, { direction: 'top', offset: [0, -14] })
-        .on('click', () => onSelect(b.id)),
+        .on('click', () => (measure.isActive() ? measure.pick(b) : onSelect(b.id))),
     ]),
   );
 
-  const popup = L.popup({ className: 'card-popup', offset: [0, -10], minWidth: 260, maxWidth: 300, autoPanPadding: [24, 24] });
+  const measure = createMeasureTool(map, { onStart: () => onSelect(null) });
+
+  // closeOnClick is off because Leaflet's version runs before the marker click is
+  // handled, and the re-render it causes swallows the click. Clicking empty map
+  // closes the card instead (marker clicks don't reach the map).
+  const popup = L.popup({ className: 'card-popup', offset: [0, -10], minWidth: 260, maxWidth: 300, autoPanPadding: [24, 24], closeOnClick: false });
   let syncing = false; // ignore popup closes we trigger ourselves
   map.on('popupclose', () => syncing || onSelect(null));
+  map.on('click', () => map.hasLayer(popup) && onSelect(null));
 
   // Show only buildings with a visible space, and the card for the selected one.
   function update(visibleSpaces, selectedId) {
@@ -41,7 +48,7 @@ export function createMap(el, buildings, { onSelect }) {
     syncing = false;
   }
 
-  return { update, resize: () => map.invalidateSize() };
+  return { update, measure, resize: () => map.invalidateSize() };
 }
 
 // Marker shows the space ID (or a count if a building has several matching

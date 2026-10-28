@@ -83,6 +83,7 @@ document.addEventListener('click', e => {
 
 document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
+  if (map.measure.isActive()) return map.measure.setActive(false);
   if (state.detailId) state.detailId = null;
   else state.buildingId = null;
   render();
